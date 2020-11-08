@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Serif+KR:wght@200&display=swap");
+
+textarea {
+  width: 500px;
+  height: 100px;
+  resize: none;
+  border-radius: 10px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif KR", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  background: #fff;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  /* linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  ); */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.letter-app {
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #ff69b4;
+  text-align: center;
+  margin: 100px auto;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+h3,
+h2 {
+  margin: 22px 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+.Read {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.letter-form {
+  margin-bottom: 30px;
+}
+
+.letter-textarea {
+  padding: 10px 30px 10px 10px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #fff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+  height: 100px;
+  resize: none;
+}
+
+.letter-textarea::placeholder {
+  color: #fff;
+}
+
+.letter-button {
+  transform: translate(0px, -44px);
+  height: 100px;
+  padding: 40px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: #fff;
+  color: #ff69b4;
+  text-transform: capitalize;
+}
+
+.letter-textarea.edit {
+  border: 2px solid #fff;
+}
+
+.letter-button.edit {
+  background: #fff;
+  padding: 16px 22px;
+}
+
+.letter-row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.letter-row {
+  white-space: pre;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 4px auto;
+  color: #fff;
+  background: #ff69b4;
+  border-style: solid;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-icon {
+  cursor: pointer;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  cursor: pointer;
+  color: #fff;
 }

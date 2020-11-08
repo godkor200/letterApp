@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LetterList from "./Components/LetterList";
 
-function App() {
+function letterApp() {
+  console.log("render called");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="letter-app">
+      <h1>편지 공간</h1>
+      <LetterList />
     </div>
   );
 }
 
-export default App;
+export default letterApp;
