@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LetterForm from "./LetterForm";
 import Letter from "./Letter";
 import "../App.css";
+import axios from "axios";
+
 function LetterList() {
   const [letters, setLetters] = useState([]);
+
+  // useEffect(async () => {
+  //   const response = await axios.get("http://localhost:4001/api/letters");
+  //   setLetters(response.data);
+  // });
+
   const addLetter = (letter) => {
     //C
     if (!letter.text || /^\s*$/.test(letter.text)) {
@@ -13,7 +21,6 @@ function LetterList() {
     const newLetter = [letter, ...letters];
     //...letters는 기존에 추가 되어 있던 것들
     // letter 추가 해야 될것들
-    console.log("addLetter -> newLetter", ...letters);
     setLetters(newLetter);
   };
   const removeLetter = (id) => {
@@ -41,7 +48,6 @@ function LetterList() {
   const ReadLetter = (id) => {
     //R
     let updatedLetter = letters.map((letter) => {
-      console.log("ReadLetter -> letter", letter);
       if (letter.id === id) {
         letter.isRead = !letter.isRead;
       }

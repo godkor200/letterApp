@@ -4,6 +4,7 @@ import { RiCloseCircleLine } from "react-icons/ri";
 import { TiEdit } from "react-icons/ti";
 import "../App.css";
 function Letter({ letters, ReadLetter, removeLetter, updateLetter }) {
+  console.log("Letter -> letters", letters);
   const [edit, setEdit] = useState({
     id: null,
     value: "",
