@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Gaegu-Light;
+  src: url("../src/static/fonts/Gaegu-Light.ttf");
+}
+
+body {
+  font-family: Gaegu-Light;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
