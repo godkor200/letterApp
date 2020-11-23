@@ -12,7 +12,7 @@ const bodyParser = require("koa-bodyparser");
 const cors = require("@koa/cors");
 const fs = require("fs");
 const indexHtml = fs.readFileSync(
-  path.resolve(__dirname, "../build/index.html"),
+  path.resolve(__dirname, "./public/index.html"),
   { encoding: "utf8" }
 );
 /*-----------------------------------------------------*/
@@ -20,7 +20,7 @@ app.use(cors());
 // logger
 app.use(bodyParser());
 // server side
-app.use(serve(path.resolve(__dirname, "../server/")));
+app.use(serve(path.resolve(__dirname, "./public")));
 app.use(async (ctx, next) => {
   await next();
   const rt = ctx.response.get("X-Response-Time");
