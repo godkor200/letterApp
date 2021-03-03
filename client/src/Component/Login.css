@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: #9bbbd4;
+}
+
+h1 {
+  padding: 10px;
+}
+.login-form {
+  position: relative;
+  height: 30px;
+}
+.login-form input {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}

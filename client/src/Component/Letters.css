@@ -5,10 +5,24 @@
   border-radius: 5px;
   padding: 20px;
 }
+.letters-reply-wapper {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px black;
+}
+.replyTime {
+  font-size: 10px;
+}
+.replyComment {
+  font-size: 15px;
+  font-weight: bold;
+}
 .letters-content {
   overflow: scroll;
   background-color: #fef01b;
-  font-size: 10px;
+  font-size: 15px;
   word-break: break-all;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -16,11 +30,38 @@
   border-radius: 5px;
   padding: 10px;
 }
-
+.letters-content-wapper {
+  text-align: right;
+}
+.letters-reply-delete {
+  text-align: right;
+}
+.letters-reply-wapper {
+  text-align: left;
+}
+.letters-content-delete {
+  cursor: pointer;
+  padding: 3px;
+  size: 40px;
+}
+.letters-content-modify {
+  cursor: pointer;
+  padding: 3px;
+  size: 40px;
+}
+.letters-content-reply {
+  cursor: pointer;
+  padding: 3px;
+  size: 40px;
+}
 .wrap {
   display: flex;
   align-items: center;
   justify-content: left;
+}
+.letter-author {
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 .button {
@@ -41,4 +82,15 @@
 }
 h2 {
   text-align: center;
+}
+
+.versiontag {
+  font-size: 10px;
+}
+
+.letters-reply-form input {
+  width: 100%;
+  background-color: #fef01b;
+  border: none;
+  border-bottom: 1px solid black;
 }
